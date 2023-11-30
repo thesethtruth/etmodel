@@ -255,6 +255,19 @@ nl:
         Hoe jij verderop de elektriciteit opwekt, bepaalt uiteindelijk de totale primaire
         energiebesparing.\r\n\r\n<br/><br/>\r\nKies '<u>Wijzig grafiek</u>' boven
         de grafiek om andere grafieken te tonen over energiegebruik.\r\n"
+    final_demand_per_carrier_energetic:
+      title: Eindgebruik energie per drager (energetisch)
+      short_description: ''
+      description: 'Deze grafiek toen hoe het finale energetische eindgebruik is onderverdeeld over de energiedragers.
+      Een energiedrager is een bruikbare vorm van energie, zoals elektriciteit of benzine. 
+      Met eindgebruik bedoelen we dat we geen rekening houden met verliezen bij de productie van de energiedragers.'
+    final_demand_per_carrier_non_energetic:    
+      title: Eindgebruik energie per drager (non-energetisch)
+      short_description: ''
+      description: 'Deze grafiek toen hoe het finale energetische eindgebruik is onderverdeeld over de energiedragers.
+      Een energiedrager is een bruikbare vorm van energie, zoals elektriciteit of benzine. 
+      Met eindgebruik bedoelen we dat we geen rekening houden met verliezen bij de productie van de energiedragers. 
+      Non-energetisch gebruik is het gebruik van energiedragers (zoals olie) om niet-energieproducten te maken, zoals bijvoorbeeld kunstmest.'   
     use_of_final_demand_in_buildings:
       title: Eindgebruik energie in gebouwen per applicatie
       short_description:
@@ -488,4 +501,10 @@ nl:
       title: Verliezen in warmtenetten per huishouden
       description:
         Deze tabel toont de warmteverliezen in warmtenetten per huishouden. De totale verliezen worden op basis van eindverbruik gealloceerd aan huishoudens.
+    future_energy_transit_flows:
+      title: Toekomstige energetische transitstromen
+      short_description: Toekomst
+      description: |
+        Deze grafiek toont de verschillende energetische transitstromen in de toekomst, uitgesplitst per drager.
+        Elk van de staafjes draagt bij aan het totaal, dat aangegeven wordt met het zwarte staafje rechts in de grafiek.
 
