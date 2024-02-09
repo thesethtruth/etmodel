@@ -879,6 +879,7 @@ en:
         imported_electricity: "Imported electricity"
         imported_ammonia: "Imported ammonia"
         individual: "Individual heating"
+        infrastructure: "Infrastructure"
         interconnector_1_marginal_cost_curve: "Price of interconnector 1"
         interconnector_2_marginal_cost_curve: "Price of interconnector 2"
         interconnector_3_marginal_cost_curve: "Price of interconnector 3"

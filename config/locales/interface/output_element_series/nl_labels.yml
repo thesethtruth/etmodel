@@ -929,6 +929,7 @@ nl:
         industry_other_electricity: "Overige industrie elektriciteitsvraag"
         industry_other_heat: "Overige industrie warmtevraag"
         industry_non_energetic: "Industrie (grondstof)"
+        infrastructure: "Infrastructuur"
         inland: "Op land"
         insulation: "Isolatie gebouwde omgeving"
         insulation_savings_buildings: "Isolatiebesparingen"

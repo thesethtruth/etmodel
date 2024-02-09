@@ -300,3 +300,12 @@ nl:
             </a>
           </li>
         </ul>
+    data_export_system_costs_per_carrier:
+      title: Systeemkosten per drager
+      short_description:
+      description: |
+        De grafiek bij deze sectie toont een allocatie van systeemkosten aan de vier meest prominente energiedragers: elektriciteit, warmte, netwerkgas en waterstof.
+        <br> </br>
+        <b> Let op: </b> Deze grafiek toont alleen een deel van de systeemkosten, omdat sommige componenten van het systeem buiten beschouwing zijn gelaten.
+
+      

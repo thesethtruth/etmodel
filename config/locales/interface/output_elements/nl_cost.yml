@@ -70,3 +70,7 @@ nl:
       title: Toekomstig ruimtebeslag van transitostromen per drager
       short_description: ''
       description: 
+    system_costs_per_carrier:
+      title: Systeemkosten per drager
+      short_description: ''
+      description:

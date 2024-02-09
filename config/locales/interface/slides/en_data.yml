@@ -301,3 +301,10 @@ en:
             </a>
           </li>
         </ul>
+    data_export_system_costs_per_carrier:
+      title: System costs per carrier
+      short_description:
+      description: |
+        The chart to the right shows an allocation of system costs to the four most prominent carriers: electricity, heat, network gas and hydrogen.
+        <br> </br>
+        <b> Note: </b> This chart only partly represents the system costs, as some system components have been left out of scope.

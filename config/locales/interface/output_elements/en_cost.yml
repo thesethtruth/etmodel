@@ -69,3 +69,7 @@ en:
       title: Future space requirements of transit flows per carrier
       short_description: ''
       description: 
+    system_costs_per_carrier:
+      title: System costs per carrier
+      short_description: ''
+      description:
