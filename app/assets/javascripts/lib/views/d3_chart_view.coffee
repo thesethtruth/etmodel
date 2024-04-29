@@ -31,20 +31,28 @@ class @D3ChartView extends BaseChartView
     @init_margins = =>
 
   render: (force_redraw) =>
-    return false unless @model.supported_by_current_browser()
+    console.log("Attempting to render. Model supported:", @model?.supported_by_current_browser())
+    return false unless @model? and @model.supported_by_current_browser()
 
-    if @model.series.find((s) -> !s.isReady())
-      # If query data has not been received, wait to render. This may be
-      # because of a prior API request being received while the request for
-      # the chart data is still ongoing.
+    if @model.series?.find((s) -> !s.isReady())
+      console.log("Some series are not ready.")
       return
 
     if @model.get('requires_merit_order')
       @check_merit_enabled()
 
       unless App.settings.merit_order_enabled()
+        console.log("Merit order not enabled.")
         @drawn = false
         return
+
+    # Calculate total data sum and check if it's zero
+    totalSum = @sumData()
+    console.log("Total sum of data:", totalSum)
+    if totalSum == 0
+      console.log("Showing empty message")
+      @display_empty_message()
+      return
 
     if force_redraw || !@drawn
       @clear_container()
@@ -53,10 +61,10 @@ class @D3ChartView extends BaseChartView
       @drawn = true
 
     @refresh()
-    @display_empty_message()
 
-  is_empty: =>
-    false
+  is_empty: ->
+    totalSum = @sumData()
+    totalSum == 0
 
   display_empty_message: =>
     EmptyChartMessage.display(this)
@@ -163,6 +171,19 @@ class @D3ChartView extends BaseChartView
            I18n.t("output_element_series.labels.#{d.get('key')}")
         )
     )
+
+  sumData: ->
+    console.log("Checking model and series:", @model?, @model?.series?)
+    return 0 unless @model? and @model.series?
+    total = 0
+    for series in @model.series
+      if series?.data?
+        total += d.value for d in series.data when d?.value?
+      else
+        console.log("Data undefined or not an array for series:", series)
+    console.log("Total sum calculated:", total)
+    total
+
 
   # height of the legend item
   legend_cell_height: 15

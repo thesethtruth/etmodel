@@ -37,9 +37,13 @@ var EmptyChartMessage = (function () {
             var container = $(chart.container_selector()),
                 wrapper   = template(chart.model.get('key'), container),
                 isEmpty   = chart.is_empty();
-
+        
+            console.log("Container found:", container.length);
+            console.log("Chart Key:", chart.model.get('key'));
+            console.log("Is Chart Empty:", isEmpty);
+        
             container.toggleClass("empty", isEmpty);
             wrapper.toggle(isEmpty);
-        }
+        }        
     };
 }());
