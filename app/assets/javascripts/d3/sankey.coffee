@@ -54,6 +54,7 @@ D3.sankey =
           {left: 'coal_and_coal_products',       right: 'electricity',               gquery: 'sankey_0_to_1_coal_and_coal_products_to_electricity',    color: '#252525'},
           {left: 'natural_gas',                  right: 'electricity',               gquery: 'sankey_0_to_1_natural_gas_to_electricity',               color: '#7f7f7f'},
           {left: 'geothermal',                   right: 'electricity',               gquery: 'sankey_0_to_1_geothermal_to_electricity',                color: '#FF8400'},
+          {left: 'non_biogenic_waste',           right: 'electricity',               gquery: 'sankey_0_to_1_non_biogenic_waste_to_electricity',        color: '#BA7D40'},
         
           {left: 'biomass_products',             right: 'heat',                      gquery: 'sankey_0_to_1_biomass_products_to_heat',                 color: '#2ca02c'},
           {left: 'natural_gas',                  right: 'heat',                      gquery: 'sankey_0_to_1_natural_gas_to_heat',                      color: '#7f7f7f'},
@@ -64,6 +65,7 @@ D3.sankey =
           {left: 'residual_heat',                right: 'heat',                      gquery: 'sankey_0_to_1_residual_heat_to_heat',                    color: '#cc0000'},
           {left: 'imported_heat',                right: 'heat',                      gquery: 'sankey_0_to_1_imported_heat_to_heat',                    color: '#cc0000'},
           {left: 'geothermal',                   right: 'heat',                      gquery: 'sankey_0_to_1_geothermal_to_heat',                       color: '#FF8400'},
+          {left: 'non_biogenic_waste',           right: 'heat',                      gquery: 'sankey_0_to_1_non_biogenic_waste_to_heat',               color: '#BA7D40'},          
 
           {left: 'biomass_products',             right: 'hydrogen',                  gquery: 'sankey_0_to_1_biomass_products_to_hydrogen',             color: '#2ca02c'},
           {left: 'natural_gas',                  right: 'hydrogen',                  gquery: 'sankey_0_to_1_natural_gas_to_hydrogen',                  color: '#7f7f7f'},
@@ -72,6 +74,7 @@ D3.sankey =
           {left: 'imported_lohc',                right: 'hydrogen',                  gquery: 'sankey_0_to_1_imported_lohc_to_hydrogen',                color: '#87cfeb'},
           {left: 'imported_ammonia',             right: 'hydrogen',                  gquery: 'sankey_0_to_1_ammonia_to_hydrogen',                      color: '#1ce6d6'},
           {left: 'residual_hydrogen',            right: 'hydrogen',                  gquery: 'sankey_0_to_1_residual_hydrogen_to_hydrogen',            color: '#87cfeb'},
+          {left: 'non_biogenic_waste',           right: 'hydrogen',                  gquery: 'sankey_0_to_1_non_biogenic_waste_to_hydrogen',               color: '#BA7D40'},     
 
           {left: 'extracted_oil',                right: 'oil_and_oil_products',      gquery: 'sankey_0_to_1_crude_oil_to_oil_and_oil_products',        color: '#8c564b'}, 
           {left: 'imported_oil',                 right: 'oil_and_oil_products',      gquery: 'sankey_0_to_1_imported_oil_and_oil_products_to_oil_and_oil_products',     color: '#8c564b'},
