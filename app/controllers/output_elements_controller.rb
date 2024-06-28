@@ -40,6 +40,23 @@ class OutputElementsController < ApplicationController
   def zoom
   end
 
+  def collect_labels_and_gqueries
+    output_element_keys = params[:keys].to_s.split(',').reject(&:blank?).uniq
+
+    @labels_and_gqueries = output_element_keys.each_with_object([]) do |key, collection|
+      file_path = Rails.root.join('config', 'interface', 'output_element_series', "#{key}.yml")
+
+      if File.exist?(file_path)
+        data = YAML.load_file(file_path)
+        data.each do |label, gquery|
+          collection << [label, gquery]
+        end
+      end
+    end
+
+    render(status: :ok, json: @labels_and_gqueries)
+  end
+
   private
 
   def find_output_element

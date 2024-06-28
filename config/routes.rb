@@ -131,6 +131,7 @@ Rails.application.routes.draw do
 
     collection do
       get 'batch/:keys',    action: :batch
+      get 'output_elements/collect_labels_and_gqueries', to: 'output_elements#collect_labels_and_gqueries'
     end
   end
 
