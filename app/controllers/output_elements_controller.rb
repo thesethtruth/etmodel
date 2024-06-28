@@ -42,19 +42,23 @@ class OutputElementsController < ApplicationController
 
   def collect_labels_and_gqueries
     output_element_keys = params[:keys].to_s.split(',').reject(&:blank?).uniq
+    locale = params[:locale] || I18n.default_locale
 
-    @labels_and_gqueries = output_element_keys.each_with_object([]) do |key, collection|
+    labels_and_gqueries = output_element_keys.each_with_object([]) do |key, collection|
       file_path = Rails.root.join('config', 'interface', 'output_element_series', "#{key}.yml")
 
       if File.exist?(file_path)
         data = YAML.load_file(file_path)
         data.each do |label, gquery|
-          collection << [label, gquery]
+          translated_label = I18n.t("output_element_series.labels.#{label}", locale: locale)
+          collection << { translated_label => gquery }
         end
       end
     end
 
-    render(status: :ok, json: @labels_and_gqueries)
+    formatted_data = format_to_yaml_structure(labels_and_gqueries)
+
+    render(status: :ok, json: formatted_data.to_json)
   end
 
   private
@@ -63,5 +67,20 @@ class OutputElementsController < ApplicationController
     @as_table = params[:format] == 'table'
 
     @chart = OutputElement.find!(params[:key])
+  end
+
+  def format_to_yaml_structure(data)
+    schema = data.map do |hash|
+      { 'name' => hash.keys.first, 'type' => 'query' }
+    end
+
+    rows = data.map do |hash|
+      { hash.keys.first => hash.values.first }
+    end
+
+    {
+      'schema' => schema,
+      'rows' => rows
+    }
   end
 end
