@@ -39,6 +39,13 @@
   slide_key: flexibility_electricity_import_export_interconnectivity
   interface_group: costs
 
+- key: electricity_interconnector_1_must_run
+  step_value: 1.0
+  unit: boolean
+  position: 7
+  interface_group: must_run_dispatchable
+  slide_key: flexibility_electricity_import_export_interconnectivity
+
 # Interconnector #2
 - key: electricity_interconnector_2_capacity
   step_value: 0.1
@@ -78,6 +85,13 @@
   position: 6
   slide_key: flexibility_electricity_import_export_interconnectivity_2
   interface_group: costs
+
+- key: electricity_interconnector_2_must_run
+  step_value: 1.0
+  unit: boolean
+  position: 7
+  interface_group: must_run_dispatchable
+  slide_key: flexibility_electricity_import_export_interconnectivity_2
 
 # Interconnector #3
 - key: electricity_interconnector_3_capacity
