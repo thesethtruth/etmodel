@@ -126,6 +126,10 @@ module ScenarioHelper
     render partial: 'scenarios/slides/interconnector_curves_upload', locals: { num: }
   end
 
+  def interconnector_must_run_curve_upload(num)
+    render partial: 'scenarios/slides/interconnector_must_run_curves_upload', locals: { num: }
+  end
+
   # Public: Creates a link to view the source data behind the current area in the ETM Dataset
   # Manager.
   def link_to_datamanager_for_current_area

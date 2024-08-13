@@ -1,0 +1,9 @@
+.interface_group.must-run
+  %hr
+  %span.label= t("custom_curves.must_run_group_title")
+
+%p{ style: 'margin-top: 0' }
+  = t("custom_curves.must_run_intro_html", docs_path: 'https://docs.energytransitionmodel.com/main/costs-imported-electricity#uploaded-price-curves')
+
+.curve-upload.multi-curve-upload.custom-curve{ data: { curve_name_match: "(?:^|_)interconnector_#{num}_(?:export|import)_must_run(?:$|_)" } }
+  .loading

@@ -8,10 +8,14 @@ en:
     interconnector_intro_html: |
       By default, the ETM assumes that the external electricity price and availability of import and export, set with
       the sliders above, are constant throughout the year. You may override this assumption by uploading CSV files
-      below containing an hourly changing price or availability. </br></br>
+      below containing an hourly changing price or availability. Alternatively, if you toggle the 'must-run' switch above to 'on', set your profiles in the Must-run curves section. </br></br>
       Click on the drop-down icon to change which curve you want to upload. For more information on how this
       works, and examples of compatible CSV files, please <a href=%{docs_path} target="_blank">see our documentation</a>.
     interface_group_title: Custom curves
+    must_run_intro_html: |
+      Override the default profiles by uploading CSV files below. The ETM will use the shape of your profile (the relative distribution of demand over time). </br></br>
+      Click on the drop-down icon to change which curve you want to upload.
+    must_run_group_title: Must-run curves
     loading: Loading...
     max: Maximum
     mean: Mean
@@ -41,6 +45,7 @@ en:
       industry_electricity: "Demand: Industry electricity"
       industry_heat: "Demand: Industry heat"
       interconnectors: "Import/export: Interconnectors"
+      must_run: Must-run
       transport: "Demand: Transport"
       gas_import_export: "Import/export: Gases"
       weather: Weather data
@@ -85,6 +90,8 @@ en:
       interconnector_10_export_availability: Interconnector 10 export availability
       interconnector_11_export_availability: Interconnector 11 export availability
       interconnector_12_export_availability: Interconnector 12 export availability
+      interconnector_1_export_must_run: Interconnector 1 demand profile
+      interconnector_1_import_must_run: Interconnector 1 supply profile
       weather/air_temperature: Air temperature
       weather/buildings_heating: Buildings heating
       electric_buses: Electric buses

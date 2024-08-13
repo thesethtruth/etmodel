@@ -501,12 +501,9 @@ en:
     electricity_interconnector_11_marginal_costs: *interconnector_marginal_costs
     electricity_interconnector_12_marginal_costs: *interconnector_marginal_costs
     electricity_interconnector_1_must_run: &interconnector_must_run
-      title: "Make a curve always run"
+      title: "Toggle Dispatchable or Must-run"
       short_description:
-      description: "When you upload a custom curve for an interconnector, you may
-        want to set the interconnecter to always run. For example if you've uploaded
-        a curve that already takes into account the availability of the interconnector
-        or the price mechanisms that might determine importing/exporting of electricity."
+      description: "See the custom curves section for further explanation of the Must-run and Dispatchable settings."
     electricity_interconnector_2_must_run: *interconnector_must_run
     electricity_interconnector_3_must_run: *interconnector_must_run
     electricity_interconnector_4_must_run: *interconnector_must_run
