@@ -1,4 +1,14 @@
 # What's new in the Energy Transition Model?
+
+___
+
+# September 2024
+
+### Change Log Mailinglist
+
+The mailing list for the change log will now be managed through the ETM. This mailing list provides updates regarding any changes made to the ETM such as when sliders are renamed, added or removed. You may subscribe or unsubscribe to the list via **[your ETM profile](https://engine.energytransitionmodel.com/identity/profile)**. The change log mailing list will receive an email when there is a new deploy - usually once a month.
+
+
 ___
 
 # July 2024

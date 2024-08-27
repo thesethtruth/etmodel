@@ -47,3 +47,8 @@ institutes have actively contributed knowledge and resources making sure the ETM
 open-source tool. Are you interested in collaborating to expand or improve the ETM?
 
 [Contact us →](https://quintel.com/contact)
+
+If you use the ETM consistently and would like updates regarding changes to inputs, please subscribe
+to our change log mailinglist via your profile.
+
+[Your profile →](https://engine.energytransitionmodel.com/identity/profile)
