@@ -90,8 +90,8 @@ en:
       interconnector_10_export_availability: Interconnector 10 export availability
       interconnector_11_export_availability: Interconnector 11 export availability
       interconnector_12_export_availability: Interconnector 12 export availability
-      interconnector_1_export_must_run: Interconnector 1 demand profile
-      interconnector_1_import_must_run: Interconnector 1 supply profile
+      interconnector_1_export_must_run: Interconnector 1 export capacity profile
+      interconnector_1_import_must_run: Interconnector 1 import capacity profile
       weather/air_temperature: Air temperature
       weather/buildings_heating: Buildings heating
       electric_buses: Electric buses
